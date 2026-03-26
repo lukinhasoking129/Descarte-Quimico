@@ -29,8 +29,7 @@ A importância de práticas sustentáveis
 ⚠️ Riscos à saúde <br>
 🌎 Impactos ambientais <br>
 ♻️ Formas corretas de descarte <br>
-🌱 Sustentabilidade <br>
-🚧 Status do Projeto:Finalizado
+🌱 Sustentabilidade
 
 # ✔ Implementado:
 Estrutura HTML completa <br>
