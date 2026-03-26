@@ -1,0 +1,92 @@
+/* Common styles extracted from inline styles */
+
+main {
+  max-width: 1400px;
+  margin: 90px auto 60px auto;
+  padding: 30px 60px;
+  background-color: #007941;
+  border-radius: 12px;
+  box-shadow: 0 8px 30px rgba(0,128,64,0.8);
+  color: #ffffff;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Additional common styles for scroll-section and typography */
+
+.scroll-section {
+  margin-bottom: 60px;
+  padding: 30px;
+  background-color: #005a3c;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  color: #d9f0d9;
+}
+
+.scroll-section h1, .scroll-section h2 {
+  color: white;
+  font-weight: 700;
+  margin-bottom: 20px;
+  border-bottom: 4px solid #009751;
+  display: inline-block;
+  padding-bottom: 8px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.scroll-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 1100px;
+}
+
+.scroll-section ul {
+  list-style-type: square;
+  padding-left: 30px;
+  color: #d0e8d8;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.scroll-section ul li {
+  margin-bottom: 14px;
+}
+
+/* Responsive and layout styles */
+
+.flex-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1024px) {
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Image styles */
+
+.imagens-residuos-conteudo {
+  max-width: 200px;
+  margin-right: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 768px) {
+  .imagens-residuos-conteudo {
+    margin-right: 0;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+}

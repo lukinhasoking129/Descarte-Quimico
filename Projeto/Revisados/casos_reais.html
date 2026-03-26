@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Descarte Químico - Casos Reais</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    main {
+      flex: 1;
+      padding: 40px 30px;
+      width: 95%;
+      max-width: 1400px;
+      margin: 30px auto 30px auto;
+      background-color: #007941;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+      color: white;
+    }
+    .hero {
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 50px;
+      background-color: #009751;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .card_casos_reais {
+      background: #004d40;
+      border-radius: 8px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+      padding: 25px 30px;
+      color: white;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card_casos_reais:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.5);
+    }
+    .card-titulo-casos-reais {
+      font-weight: 700;
+      font-size: 1.4rem;
+      cursor: pointer;
+      display: block;
+      padding: 15px 20px;
+      color: #a8e6cf;
+      user-select: none;
+      transition: color 0.3s ease;
+      border-bottom: 2px solid transparent;
+    }
+    .card-titulo-casos-reais:hover {
+      color: white;
+      border-color: white;
+    }
+    .card-cheked-casos-reais:checked + .card-conteudo-casos-reais {
+      display: block;
+      animation: fadeIn 0.4s ease forwards;
+    }
+    .card-conteudo-casos-reais {
+      display: none;
+      padding-top: 15px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: white;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar" style="padding: 15px 30px; max-width: 1400px; margin: 0 auto;">
+      <h1><a href="index.html">Descarte Químico</a></h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="conceito.html">Conceito</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
+          <li><a href="perigosos.html">Perigosos</a></li>
+          <li><a href="impactos.html">Impactos</a></li>
+          <li><a href="fauna_flora.html">Fauna & Flora</a></li>
+          <li><a href="casos_reais.html">Casos</a></li>
+          <li><a href="legislacao.html">Leis & Penalidades</a></li>
+          <li><a href="responsabilidade.html">Responsabilidade</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Acidentes envolvendo descarte inadequado</h1>
+    </section>
+
+    <section>
+      <div class="card_casos_reais">
+        <label for="card1" class="card-titulo-casos-reais">Caso Love Canal (EUA, anos 1970)</label>
+        <input type="checkbox" id="card1" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O Caso Love Canal refere-se a uma tragédia ambiental que ocorreu em Niagara Falls, Nova York, EUA, nos anos 1970. O Love Canal era um local onde a empresa Hooker Chemical (mais tarde parte da Occidental Petroleum) havia enterrado 22.000 toneladas de resíduos químicos tóxicos. Décadas depois, a área foi construída como um bairro residencial, resultando em uma série de problemas de saúde para os moradores, incluindo doenças e defeitos congênitos.<br><br>
+          Local:<br>
+          A área de Love Canal em Niagara Falls, Nova York, era um antigo aterro sanitário de resíduos químicos.<br>
+          Contaminação:<br>
+          A Hooker Chemical havia descarregado toneladas de produtos químicos tóxicos no local, incluindo dioxina, que é altamente perigosa.<br>
+          Construção do bairro:<br>
+          A área foi posteriormente construída como um bairro residencial, sem que os riscos de contaminação fossem totalmente reconhecidos.<br>
+          Problemas de saúde:<br>
+          Os moradores do bairro começaram a apresentar uma série de problemas de saúde, incluindo doenças, defeitos congênitos e dificuldades de reprodução.<br>
+          Revelação:<br>
+          A gravidade da contaminação foi revelada pela mídia em 1977, o que levou a uma resposta governamental e a evacuação de parte do bairro.<br>
+          Impacto:<br>
+          O Caso Love Canal teve um impacto significativo na conscientização sobre a importância da proteção ambiental e da regulamentação das indústrias.<br>
+          Legislação:<br>
+          O incidente ajudou a impulsionar a criação de leis ambientais mais rigorosas, como a Superfund Act, para lidar com locais contaminados, como o Love Canal.<br>
+          Consequências:<br>
+          Os moradores do bairro sofreram com problemas de saúde, e muitos deles foram deslocalizados.<br>
+          Atualização:<br>
+          O Love Canal continua a ser um tema de estudo e discussão sobre os perigos da poluição industrial e a necessidade de medidas de proteção ambiental.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card2" class="card-titulo-casos-reais">Bhopal (Índia, 1984)</label>
+        <input type="checkbox" id="card2" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O Desastre de Bhopal foi um vazamento de gás tóxico que ocorreu em Bhopal, Índia, em 3 de dezembro de 1984, na fábrica de pesticidas da Union Carbide India Limited, resultando em milhares de mortes e lesões. Considerado um dos piores desastres industriais da história, o vazamento de isocianato de metila expôs mais de meio milhão de pessoas a um gás altamente tóxico.<br>
+          Data: 3 de dezembro de 1984.<br>
+          Localização: Bhopal, Madhya Pradesh, Índia.<br>
+          Empresa: Union Carbide India Limited (uma subsidiária da Union Carbide Corporation).<br>
+          Substância liberada: Isocianato de metila (MIC), um gás altamente tóxico.<br>
+          Causas: A causa do vazamento foi uma combinação de fatores, incluindo falhas de manutenção, falhas de segurança e falta de conhecimento sobre os riscos.<br>
+          Consequências:<br>
+          Estimativas apontam para mais de 15.000 mortes e centenas de milhares de feridos e afetados, com danos à saúde a longo prazo para muitos sobreviventes.<br>
+          Controvérsias:<br>
+          O Desastre de Bhopal foi um marco na história da segurança industrial e ambiental, levando a mudanças nas regulamentações e na conscientização sobre os riscos das operações industriais.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card3" class="card-titulo-casos-reais">Caso Minamata (Japão, 1950-1960)</label>
+        <input type="checkbox" id="card3" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O Caso de Minamata foi uma tragédia ambiental e de saúde pública que ocorreu no Japão, na década de 1950, devido à contaminação da Baía de Minamata por mercúrio, especificamente metilmercúrio, proveniente da indústria química Chisso Corporation. A contaminação causou a doença de Minamata, que afetou a saúde e a vida de milhares de pessoas, especialmente através do consumo de peixes contaminados.<br>
+          Contaminação:<br>
+          A Chisso Corporation, que produzia produtos químicos, liberou metilmercúrio no mar através de seus efluentes industriais.<br>
+          Biotransformação:<br>
+          O mercúrio foi transformado em metilmercúrio por bactérias na água, que é mais tóxico e se acumula na cadeia alimentar.<br>
+          Bioacumulação e Biomagnificação:<br>
+          O metilmercúrio se concentrou nos peixes, que foram consumidos pela população local.<br>
+          Doença de Minamata:<br>
+          A ingestão de peixes contaminados levou à doença de Minamata, que causava danos neurológicos, incluindo paralisia, deficiência visual, dificuldades de fala e outros sintomas.<br>
+          Impactos:<br>
+          A doença afetou mais de 2.000 pessoas, incluindo fetos e crianças em desenvolvimento, e deixou um rastro de danos e sofrimento por décadas.<br>
+          A Convenção de Minamata:<br>
+          A tragédia de Minamata motivou a criação da Convenção de Minamata sobre Mercúrio, um acordo internacional que visa controlar o uso, a produção e a liberação de mercúrio.<br>
+          Lições:<br>
+          O caso de Minamata demonstra os perigos da poluição industrial e a importância de proteger o ambiente e a saúde humana. A tragédia também revelou a necessidade de regulamentações mais rigorosas para a indústria e de maior conscientização sobre os riscos da poluição por metais pesados.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card4" class="card-titulo-casos-reais">Chevron no Equador (anos 1970-1990)</label>
+        <input type="checkbox" id="card4" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>A Chevron operou no Equador, através da sua subsidiária Texaco (TexPet), de 1964 a 1992, em parceria com a petrolífera estatal Petroecuador. A atividade da Texaco, e posteriormente da Chevron, foi marcada por acusações de poluição ambiental e impactos negativos sobre comunidades indígenas na Amazônia equatoriana. A Texaco foi acusada de despejar grandes volumes de águas residuais tóxicas e petróleo, causando danos ambientais significativos.<br>
+          Detalhes da atividade da Texaco/Chevron no Equador:<br>
+          Período de Operação: 1964 a 1992.<br>
+          Parceria:<br>
+          Consórcio com a Petroecuador.<br>
+          Área de Operação:<br>Nordeste da Amazônia equatoriana.<br>
+          Acusações:<br>
+          Poluição ambiental (despejo de águas residuais e petróleo) e danos às comunidades indígenas.<br>
+          Ações Jurídicas:<br>
+          A Chevron (após a aquisição da Texaco) foi alvo de processos judiciais no Equador e nos Estados Unidos.<br>
+          Impactos:<br>
+          A atividade da Texaco/Chevron foi considerada responsável por danos ambientais significativos e impactos nas comunidades indígenas.<br>
+          Consequências:<br>
+          A Chevron foi condenada por tribunais equatorianos, mas a decisão foi objeto de disputa jurídica e, posteriormente, de um tribunal de arbitragem internacional que anulou a condenação.<br>
+          Em resumo:<br>
+          A atividade da Texaco/Chevron no Equador, entre 1964 e 1992, gerou acusações de poluição ambiental e impactos sobre comunidades indígenas, resultando em processos judiciais e uma longa disputa legal.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card6" class="card-titulo-casos-reais">Caso Brumadinho (MG, 2019)</label>
+        <input type="checkbox" id="card6" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O Caso Samarco, também conhecido como desastre de Mariana, foi um rompimento de barragem de rejeitos de minério de ferro na cidade de Mariana, em Minas Gerais, no dia 5 de novembro de 2015. O desastre, considerado o maior da história ambiental do Brasil, causou a morte de 19 pessoas, destruiu comunidades, contaminou a bacia do Rio Doce e teve impactos em vários municípios de Minas Gerais e Espírito Santo.<br>
+          Data: 5 de novembro de 2015.<br>
+          Local:<br>
+          Barragem de Fundão, em Mariana, Minas Gerais.<br>
+          Causa:<br>
+          Rompimento da barragem de rejeitos de minério de ferro.<br>
+          Responsável:<br>
+          Samarco Mineração S.A., uma joint venture da Vale e da BHP Billiton.<br>
+          Impactos:<br>
+          Morte de 19 pessoas.<br>
+          Destruição de comunidades, como Bento Rodrigues.<br>
+          Contaminação da bacia do Rio Doce, com impactos em 49 municípios.<br>
+          Impactos ambientais, sociais e econômicos.<br>
+          Volume de rejeitos:<br>
+          Aproximadamente 40 milhões de metros cúbicos.<br>
+          Processo:<br>
+          Ações judiciais estão em curso no Brasil e no Reino Unido para responsabilizar as empresas.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card7" class="card-titulo-casos-reais">Vazamento da Shell/Basf em Paulínia-SP (anos 1970-2000)</label>
+        <input type="checkbox" id="card7" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O vazamento de produtos químicos da Shell e da BASF em Paulínia-SP, que ocorreu entre as décadas de 1970 e 2000, envolveu a contaminação do solo e lençol freático por agrotóxicos, especialmente organoclorados como aldrin, endrin e dieldrin. Essa contaminação afetou trabalhadores, moradores e o meio ambiente, resultando em ações judiciais e acordos de indenização para compensar os danos.<br>
+          Detalhes do caso:<br>
+          <p>A Shell Química, que produzia agrotóxicos em Paulínia entre 1975 e 1993, foi responsável pela contaminação do lençol freático e do solo .<br>
+          A contaminação ocorreu por meio de vazamentos e lançamentos indevidos de produtos químicos, como aldrin, endrin e dieldrin, que atingiram níveis até 11 vezes acima do permitido pela legislação brasileira.</p>
+          <p>A área afetada, localizada no bairro Recanto dos Pássaros e nas proximidades do rio Atibaia, é um importante manancial de água para a região de Campinas, afetando também os moradores da área.</p>
+          <p>Em 1994, a Shell apresentou uma autodenúncia ao Ministério Público de São Paulo, reconhecendo a contaminação.</p>
+          <p>A fábrica foi vendida para a BASF em 2000, e ambas as empresas foram responsabilizadas por ações judiciais, que resultaram em acordos de indenização.</p>
+          <p>Os acordos prevêm a assistência médica vitalícia para ex-trabalhadores e seus familiares, além de compensação por danos morais, segundo um artigo do Portal FETQUIM.</p>
+          <p>O caso Shell/Basf em Paulínia é um exemplo de contaminação industrial que causou danos ambientais e à saúde da população, e que resultou em ações judiciais e acordos de indenização.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card8" class="card-titulo-casos-reais">Descarte irregular da Rhodia (São Paulo, anos 1980)</label>
+        <input type="checkbox" id="card8" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>O caso do descarte irregular da Rhodia em São Paulo nos anos 1980 é um dos episódios mais graves de contaminação ambiental no Brasil. A empresa Rhodia, localizada em Cubatão e São Vicente, descartou resíduos químicos perigosos — incluindo solventes orgânicos e metais pesados — de forma inadequada, contaminando o solo e os lençóis freáticos da região.Impacto na saúde:
+          <p>O descarte de resíduos tóxicos causou sérios problemas à saúde dos moradores do bairro Jardim das Indústrias, em São Vicente (SP). Entre os efeitos registrados estavam casos de câncer, malformações congênitas, abortos espontâneos, doenças neurológicas e intoxicações crônicas. A população exposta conviveu por anos com substâncias perigosas sem saber dos riscos.</p>
+          <p>Tipos de poluentes:<br>
+          A Rhodia descartou no solo e em córregos locais substâncias como solventes orgânicos, metais pesados (como chumbo e cádmio), resíduos de pesticidas e compostos cancerígenos, incluindo bifenilas policloradas (PCBs). Esses poluentes infiltraram no solo, contaminando lençóis freáticos e se espalhando para áreas residenciais.</p>
+          <p>Recuperação:<br>
+          Após grande mobilização de moradores, ativistas e órgãos públicos, a Rhodia foi responsabilizada judicialmente. A empresa foi obrigada a indenizar famílias atingidas e executar programas de remediação ambiental, como a retirada de solo contaminado, isolamento de áreas críticas e monitoramento da água subterrânea. Apesar das medidas, parte do dano foi irreversível.</p>
+        </div>
+      </div>
+
+      <div class="card_casos_reais">
+        <label for="card9" class="card-titulo-casos-reais">Caso da Indústria Química em Cubatão-SP (décadas de 1970–1980)</label>
+        <input type="checkbox" id="card9" class="card-cheked-casos-reais" hidden>
+        <div class="card-conteudo-casos-reais">
+          <p>Em resumo, Cubatão (SP) foi, nas décadas de 1970 e 1980, uma das cidades mais poluídas do mundo, apelidada de "Vale da Morte" pela ONU. A intensa poluição, principalmente causada por indústrias químicas, resultava em altos níveis de poluentes no ar, afetando a saúde da população e o meio ambiente.<br>
+          Origem da poluição:<br>
+          A poluição em Cubatão era principalmente causada pela liberação de gases tóxicos e resíduos industriais em grande escala.<br>
+          Tipos de poluentes:<br>
+          Entre os principais poluentes estavam monóxido de carbono, benzeno, óxidos de enxofre e nitrogênio, e hidrocarbonetos.<br>
+          Impactos na saúde:<br>
+          A poluição causava problemas respiratórios, doenças crônicas e, em alguns casos, mortes.<br>
+          Consequências ambientais:<br>
+          A poluição afetava a vegetação, os rios e a fauna local, tornando a cidade praticamente desprovida de vida.<br>
+          Exemplo da Rhodia:<br>
+          A empresa Rhodia, por exemplo, despejou clandestinamente resíduos tóxicos em Cubatão, contribuindo para a poluição e deixando um passivo ambiental significativo, de acordo com a Fundação Oswaldo Cruz (Fiocruz).<br>
+          Recuperação:<br>
+          A partir da década de 1990, a cidade começou um processo de recuperação ambiental, com a instalação de filtros em fábricas, controle de emissões e projetos de restauração da Mata Atlântica, segundo a Prefeitura de Cubatão.<br>
+          Mortes e adoecimentos:<br>
+          A poluição foi responsável por inúmeras mortes e adoecimentos, inclusive de trabalhadores das indústrias.<br>
+          Em suma, o caso de Cubatão é um exemplo da grave situação da poluição industrial e seus impactos sociais e ambientais, que resultou na necessidade de um longo e complexo processo de recuperação.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto APS - Ciência da Computação</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
+</create_file>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Produtos Químicos Perigosos: Riscos e Consequências do Descarte Indevido</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      padding-top: 70px;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #00695c;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 8px 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 15px 30px;
+    }
+    header h1 a {
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+    nav {
+      margin-top: 0px;
+    }
+    header a {
+      font-size: 20px;
+      display: inline-block;
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease-in-out, color 0.3s ease;
+    }
+    header a:hover {
+      transform: scale(1.2);
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+      color: #a8d5a3;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+      width: 100%;
+      margin: 0;
+      font-size: 1rem;
+      letter-spacing: 1px;
+      box-shadow: 0 -2px 8px rgba(0,0,0,0.3);
+    }
+    main {
+      flex: 1;
+      padding: 50px 40px;
+      width: 95%;
+      max-width: 1400px;
+      margin: 90px auto 60px auto;
+      background-color: #007941;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(0,128,64,0.8);
+      transition: box-shadow 0.3s ease;
+    }
+    main:hover {
+      box-shadow: 0 12px 40px rgba(0,128,64,1);
+    }
+    .hero {
+      color: white;
+      padding: 50px 40px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 60px;
+      background: linear-gradient(135deg, #009751, #004d40);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+      transition: box-shadow 0.3s ease;
+    }
+    .hero:hover {
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+    .hero h1 {
+      font-size: 3.4rem;
+      font-weight: 800;
+      margin-bottom: 25px;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+      color: #e0f2e9;
+    }
+    .hero p {
+      font-size: 1.4rem;
+      max-width: 1100px;
+      margin: 0 auto;
+      line-height: 1.9;
+      font-weight: 600;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+      color: #e0f2e9;
+    }
+    .scroll-section {
+      margin-bottom: 60px;
+      padding: 40px 40px;
+      background-color: #003322;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,128,64,0.8);
+      transition: box-shadow 0.3s ease;
+    }
+    .scroll-section:hover {
+      box-shadow: 0 14px 40px rgba(0,128,64,1);
+    }
+    .scroll-section h2 {
+      margin-bottom: 30px;
+      color: #a8d5a3;
+      border-bottom: 5px solid #00ff80;
+      display: inline-block;
+      padding-bottom: 12px;
+      font-size: 2.6rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.6);
+    }
+    .scroll-section p {
+      font-size: 1.3rem;
+      color: #cce5cc;
+      margin-bottom: 25px;
+      max-width: 1100px;
+      line-height: 1.8;
+    }
+    ul.custom-list {
+      list-style-type: square;
+      padding-left: 40px;
+      color: #cce5cc;
+      font-size: 1.3rem;
+      line-height: 1.8;
+    }
+    ul.custom-list li {
+      margin-bottom: 18px;
+    }
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0 12px;
+      margin-bottom: 40px;
+      background: rgba(0, 77, 64, 0.9);
+      color: #0d0e0d;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 128, 64, 0.8);
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+    }
+    table:hover {
+      box-shadow: 0 14px 40px rgba(0,128,64,1);
+    }
+    th, td {
+      padding: 20px 25px;
+      text-align: left;
+      font-size: 1.2rem;
+    }
+    th {
+      background-color: #00ff80;
+      color: #003322;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+    }
+    tbody tr {
+      background-color: rgba(0, 128, 64, 0.3);
+      transition: background-color 0.3s ease;
+    }
+    tbody tr:hover {
+      background-color: rgba(0, 255, 128, 0.4);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar" style="padding: 15px 30px; max-width: 1400px; margin: 0 auto;">
+      <h1><a href="index.html">Descarte Químico</a></h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="conceito.html">Conceito</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
+          <li><a href="perigosos.html">Perigosos</a></li>
+          <li><a href="impactos.html">Impactos</a></li>
+          <li><a href="fauna_flora.html">Fauna & Flora</a></li>
+          <li><a href="casos_reais.html">Casos</a></li>
+          <li><a href="legislacao.html">Leis & Penalidades</a></li>
+          <li><a href="responsabilidade.html">Responsabilidade</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero scroll-section">
+      <h1>Produtos Químicos Perigosos: Riscos e Consequências do Descarte Indevido</h1>
+      <p>O descarte inadequado de produtos químicos perigosos representa um dos maiores desafios ambientais e de saúde pública da atualidade. Produtos químicos mal descartados não apenas comprometem a segurança das pessoas, mas também podem causar danos irreparáveis ao meio ambiente, afetando a biodiversidade, a qualidade da água e do solo e até mesmo a saúde de seres humanos.</p>
+    </section>
+
+    <section class="scroll-section">
+      <h2>⚠️ O que são produtos químicos perigosos?</h2>
+      <p>Produtos químicos perigosos são substâncias ou misturas que, por suas propriedades físicas e químicas, apresentam riscos de explosões, incêndios, intoxicações ou danos ambientais. Eles possuem características específicas que os tornam altamente reativos e prejudiciais quando não descartados de maneira adequada. Esses produtos estão presentes em muitas indústrias, laboratórios, agricultura e até mesmo em nossos lares.</p>
+      <h3>Tipos de produtos químicos perigosos:</h3>
+      <ul class="custom-list">
+        <li><strong>Inflamáveis:</strong> Substâncias que podem pegar fogo facilmente.</li>
+        <li><strong>Corrosivos:</strong> Substâncias que causam danos à pele e materiais quando entram em contato.</li>
+        <li><strong>Tóxicos:</strong> Produtos que, mesmo em pequenas quantidades, podem causar intoxicações graves.</li>
+        <li><strong>Explosivos:</strong> Substâncias que podem explodir em contato com outros produtos ou condições adversas.</li>
+        <li><strong>Reativos:</strong> Produtos que podem causar reações violentas quando misturados com outras substâncias.</li>
+      </ul>
+    </section>
+
+    <section class="scroll-section">
+      <h2>💥 Consequências do Descarte Indevido</h2>
+      <h3>1. Perigos Imediatos</h3>
+      <ul class="custom-list">
+        <li><strong>Incêndios e explosões:</strong> O descarte de produtos inflamáveis ou explosivos em locais inadequados pode resultar em incêndios ou até mesmo em explosões. Por exemplo, solventes como acetona ou benzina são altamente inflamáveis e, quando descartados sem o devido cuidado, podem gerar um incêndio com grandes proporções.</li>
+        <li><strong>Queimaduras e danos à saúde:</strong> Produtos corrosivos como o ácido clorídrico e a soda cáustica podem causar queimaduras graves, afetando tanto a pele quanto os órgãos internos, caso entrem em contato. Se esses produtos não forem descartados adequadamente, podem liberar vapores que afetam as vias respiratórias e causam sérios danos pulmonares.</li>
+        <li><strong>Contaminação do solo e da água:</strong> A disposição incorreta de substâncias tóxicas como pesticidas pode infiltrar-se no solo e na água, afetando a fauna e a flora. Produtos como herbicidas e fertilizantes químicos contribuem para a eutrofização de corpos d'água, o que pode resultar em uma queda nos níveis de oxigênio, prejudicando a vida aquática.</li>
+      </ul>
+      <h3>2. Perigos a Longo Prazo</h3>
+      <ul class="custom-list">
+        <li><strong>Acúmulo de substâncias tóxicas no ambiente:</strong> Alguns produtos químicos persistem por anos ou até séculos no ambiente, causando efeitos acumulativos no solo, na água e na cadeia alimentar. Por exemplo, produtos como mercurio e chumbo podem ser armazenados em organismos vivos e, ao longo do tempo, causar sérios problemas de saúde, como intoxicação crônica e câncer.</li>
+        <li><strong>Bioacumulação e biomagnificação:</strong> A bioacumulação ocorre quando uma substância química se acumula em organismos vivos ao longo do tempo. Quando predadores consomem presas contaminadas, a concentração da substância aumenta em níveis mais altos da cadeia alimentar, em um processo chamado biomagnificação. Isso pode ter consequências catastróficas para animais e até para seres humanos, especialmente aqueles que consomem produtos contaminados.</li>
+        <li><strong>Danos aos ecossistemas:</strong> O impacto a longo prazo da contaminação de produtos químicos pode levar à destruição de habitats naturais. A poluição por produtos químicos pode alterar a composição do solo, tornando-o impróprio para o cultivo, e afetando as espécies que dependem desse solo para sobreviver.</li>
+      </ul>
+    </section>
+
+    <section class="scroll-section">
+      <h2>✅ Exemplos de Produtos Químicos Perigosos e Seus Efeitos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Produto Químico</th>
+            <th>Tipo de Perigo</th>
+            <th>Efeitos no Meio Ambiente</th>
+            <th>Efeitos na Saúde Humana</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Pesticidas (ex: DDT)</td>
+            <td>Tóxico, reativo</td>
+            <td>Contaminação do solo e água</td>
+            <td>Intoxicação aguda, câncer, problemas hormonais</td>
+          </tr>
+          <tr>
+            <td>Mercúrio</td>
+            <td>Tóxico, contaminante</td>
+            <td>Poluição de corpos d'água</td>
+            <td>Dano irreversível ao sistema nervoso, problemas renais</td>
+          </tr>
+          <tr>
+            <td>Ácido clorídrico</td>
+            <td>Corrosivo, reativo</td>
+            <td>Danos ao solo e vegetação</td>
+            <td>Queimaduras graves, dificuldades respiratórias</td>
+          </tr>
+          <tr>
+            <td>Pó de metal (ex: chumbo)</td>
+            <td>Tóxico, bioacumulativo</td>
+            <td>Contaminação de água e solo</td>
+            <td>Dano ao cérebro, sistemas nervoso e reprodutor</td>
+          </tr>
+          <tr>
+            <td>Solventes (ex: benzeno)</td>
+            <td>Inflamável, tóxico</td>
+            <td>Poluição do ar e da água</td>
+            <td>Doenças respiratórias crônicas, câncer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="scroll-section">
+      <h2>🛑 Casos Reais: Impactos de Descarte Indevido</h2>
+      <ul class="custom-list">
+        <li><strong>Caso 1: Descarte de mercúrio no Brasil</strong><br/>Em 2000, em Minas Gerais, a contaminação por mercúrio afetou comunidades locais após o descarte inadequado de resíduos de uma mineração. A água potável foi contaminada, causando sérios danos à saúde da população e aos ecossistemas locais. O mercúrio se acumulou em peixes e plantas, afetando ainda mais os seres vivos.</li>
+        <li><strong>Caso 2: Acidente com pesticidas nos EUA</strong><br/>Em Bhopal, Índia (1984), um vazamento de pesticidas causou milhares de mortes e afetou a saúde de centenas de milhares de pessoas. Embora o incidente tenha ocorrido devido a falhas de segurança, o fato de produtos químicos perigosos estarem mal armazenados contribuiu para a magnitude do desastre.</li>
+      </ul>
+    </section>
+
+    <section class="scroll-section">
+      <h2>⚖️ Medidas Preventivas para o Descarte de Produtos Químicos Perigosos</h2>
+      <ul class="custom-list">
+        <li>Treinamento adequado para trabalhadores e a população sobre os riscos dos produtos químicos e as melhores práticas de descarte.</li>
+        <li>Uso de tecnologias de tratamento de resíduos para neutralizar ou reduzir os impactos ambientais de produtos químicos perigosos.</li>
+        <li>Implementação de sistemas de coleta seletiva, como a logística reversa, que permite a devolução de produtos para tratamento especializado.</li>
+        <li>Utilização de substâncias menos perigosas quando possível, para reduzir o impacto ambiental de processos industriais.</li>
+      </ul>
+    </section>
+
+    <section class="scroll-section image-section">
+      <h2>📷 Exemplo de produtos químicos sendo descartados corretamente em um centro de triagem.</h2>
+      <img src="../imagens/rightful.jpg" alt="Exemplo de produtos químicos sendo descartados corretamente em um centro de triagem." />
+      <p><em>Descrição:</em> Imagem ilustrando a reciclagem de resíduos químicos, com recipientes adequados para cada tipo de produto.</p>
+      <p><em>Fonte:</em> Valoriza Ambiental. (https://valorizaambiental.com/descarte-correto-de-residuos-por-que-fazer/)</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto APS - Ciência da Computação</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
+</create_file>

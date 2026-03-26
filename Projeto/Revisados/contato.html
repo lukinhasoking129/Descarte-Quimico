@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contato - Descarte Químico</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f4f8;
+      color: #2c3e50;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      padding-top: 70px;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #00695c;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 8px 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 15px 30px;
+    }
+    header h1 a {
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav {
+      margin-top: 0px;
+    }
+    header a {
+      font-size: 20px;
+      display: inline-block;
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease-in-out;
+    }
+    header a:hover {
+      transform: scale(1.2);
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+      width: 100%;
+      margin: 0;
+    }
+    main {
+      flex: 1;
+      padding: 50px 40px;
+      width: 95%;
+      max-width: 1400px;
+      margin: 40px auto 40px auto;
+      background-color: #007941;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      color: #2c3e50;
+    }
+    .hero {
+      color: #ffffff;
+      padding: 50px 40px;
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 60px;
+      background-color: #005a3c;
+      font-weight: 700;
+      font-size: 3rem;
+      letter-spacing: 1.5px;
+      text-shadow: none;
+      transition: none;
+    }
+    form {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 40px 35px;
+      border-radius: 12px;
+      box-shadow: none;
+      color: #2c3e50;
+      font-weight: 700;
+      font-size: 1.2rem;
+      transition: none;
+    }
+    form:hover {
+      box-shadow: none;
+    }
+    label {
+      display: block;
+      margin-bottom: 12px;
+      font-weight: 900;
+      color: #2c3e50;
+      text-shadow: none;
+      letter-spacing: 0.5px;
+      transition: color 0.3s ease;
+    }
+    label:hover {
+      color: #00796b;
+    }
+    input[type="text"], input[type="email"], input[type="tel"], textarea {
+      width: 100%;
+      padding: 20px;
+      margin-top: 12px;
+      margin-bottom: 35px;
+      border: 3px solid #bdc3c7;
+      border-radius: 16px;
+      resize: vertical;
+      color: #2c3e50;
+      background-color: #ffffff;
+      font-size: 1.3rem;
+      font-weight: 700;
+      transition: border-color 0.4s ease;
+    }
+    input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, textarea:focus {
+      border-color: #00796b;
+      outline: none;
+      box-shadow: none;
+    }
+    input[type="submit"] {
+      background-color: #00796b;
+      color: #ffffff;
+      border: none;
+      padding: 20px 45px;
+      font-size: 1.4rem;
+      border-radius: 16px;
+      cursor: pointer;
+      font-weight: 900;
+      letter-spacing: 1.5px;
+      transition: background-color 0.4s ease;
+      box-shadow: none;
+    }
+    input[type="submit"]:hover {
+      background-color: #004d40;
+      box-shadow: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar" style="padding: 15px 30px; max-width: 1400px; margin: 0 auto;">
+      <h1><a href="index.html">Descarte Químico</a></h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="conceito.html">Conceito</a></li>
+          <li><a href="residuos.html">Tipos de resíduos</a></li>
+          <li><a href="perigosos.html">Perigosos</a></li>
+          <li><a href="impactos.html">Impactos</a></li>
+          <li><a href="fauna_flora.html">Fauna & Flora</a></li>
+          <li><a href="casos_reais.html">Casos</a></li>
+          <li><a href="legislacao.html">Leis & Penalidades</a></li>
+          <li><a href="responsabilidade.html">Responsabilidade</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero scroll-section">
+      <h1>Contato</h1>
+      <p>Entre em contato conosco e descubra como contribuir com o meio ambiente. Estamos aqui para ajudar e ouvir você.</p>
+    </section>
+    <section>
+      <form action="errorscreen.html" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu nome" name="nome" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Digite o seu endereço de e-mail" name="email" required>
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" placeholder="Digite um telefone" name="telefone" required>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 - Projeto APS - Ciência da Computação</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
+</create_file>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fauna & Flora - Descarte Químico</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      padding-top: 70px;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: #00695c;
+      color: white;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 8px 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 15px 30px;
+    }
+    header h1 a {
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+    nav {
+      margin-top: 0px;
+    }
+    header a {
+      font-size: 20px;
+      display: inline-block;
+      color: #fff;
+      margin-left: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: transform 0.2s ease-in-out;
+    }
+    header a:hover {
+      transform: scale(1.2);
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #004d40;
+      color: white;
+      width: 100%;
+      margin: 0;
+    }
+    main {
+      flex: 1;
+      padding: 40px 30px;
+      width: 95%;
+      max-width: 1400px;
+      margin: 30px auto 30px auto;
+      background-color: #007941;
+      border-radius: 8px;
+      box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    }
+    .hero {
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 50px;
+      background-color: #009751;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      position: relative;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.3rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .hero::before {
+      content: "";
+      background-image: url('../imagens/banner_fauna_flora.png');
+      background-size: cover;
+      background-position: center;
+      opacity: 0.3;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      position: absolute;
+      border-radius: 8px;
+      z-index: 0;
+    }
+    .hero > * {
+      position: relative;
+      z-index: 1;
+    }
+    .scroll-section {
+      margin-bottom: 60px;
+      padding: 30px;
+      background-color: #005a3c;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      color: #d9f0d9;
+    }
+    .scroll-section h2 {
+      margin-bottom: 25px;
+      color: white;
+      border-bottom: 4px solid #009751;
+      display: inline-block;
+      padding-bottom: 8px;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    .scroll-section p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      max-width: 1100px;
+    }
+    .image-text-flex {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+      margin-top: 15px;
+    }
+    .image-text-flex img {
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+      flex-shrink: 0;
+      width: 40%;
+      min-width: 280px;
+    }
+    .image-text-flex > div {
+      flex: 1 1 55%;
+      min-width: 300px;
+    }
+    .image-text-flex p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #d9f0d9;
+    }
+    @media (max-width: 768px) {
+      .image-text-flex {
+        flex-direction: column;
+      }
+      .image-text-flex img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar" style="padding: 15px 30px; max-width: 1400px; margin: 0 auto;">
+      <h1><a href="index.html">Descarte Químico</a></h1>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="conceito.html">Conceito</a></li>
+          <li><a href="tipos.html">Tipos</a></li>
+          <li><a href="perigosos.html">Perigosos</a></li>
+          <li><a href="impactos.html">Impactos</a></li>
+          <li><a href="fauna_flora.html">Fauna & Flora</a></li>
+          <li><a href="casos_reais.html">Casos</a></li>
+          <li><a href="legislacao.html">Leis & Penalidades</a></li>
+          <li><a href="responsabilidade.html">Responsabilidade</a></li>
+          <li><a href="solucoes.html">Soluções</a></li>
+          <li><a href="contato.html">Contato</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+      </nav>
+    </div>
+    </script>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Fauna & Flora</h1>
+      <p>O impacto das empresas no meio ambiente.</p>
+    </section>
+
+    <section class="scroll-section">
+      <p>O desequilíbrio ambiental, causado pelo descarte inadequado de resíduos e pelo desmatamento, tem impactos profundos sobre os ecossistemas, sendo um dos mais graves o colapso da cadeia alimentar. A poluição do solo, da água e da vegetação afeta diretamente os organismos que sustentam as bases dessa cadeia, prejudicando a sobrevivência de diversas espécies e resultando em um ciclo de desnutrição, doenças e extinções.</p>
+    </section>
+
+    <section class="scroll-section">
+      <h2>Poluição em rios</h2>
+      <div class="image-text-flex">
+        <img src="../imagens/peixe-fauna-flora.png" alt="Peixes mortos em rios" />
+        <div>
+          <p>A presença de peixes mortos flutuando em rios ou lagos é um sinal alarmante de contaminação hídrica. Esse tipo de ocorrência geralmente está ligado ao descarte inadequado de produtos químicos por indústrias, oficinas e outras atividades humanas. Substâncias tóxicas despejadas diretamente nos corpos d’água alteram o pH, reduzem o oxigênio dissolvido e intoxicam a fauna aquática.</p>
+          <p>Quando empresas descartam resíduos sem tratamento ou sem seguir as normas ambientais, os impactos são imediatos e devastadores. Espécies inteiras de peixes podem desaparecer de determinadas regiões, comprometendo o equilíbrio ecológico, a alimentação de comunidades ribeirinhas e até mesmo o abastecimento de água para consumo humano. Além disso, a decomposição dos animais mortos contribui para a degradação ainda maior da qualidade da água.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <h2>Poluição vegetal</h2>
+      <div class="image-text-flex">
+        <img src="../imagens/flora-poluido-faunaflora.png" alt="Plantas afetadas pela poluição" />
+        <div>
+          <p>A poluição é uma das maiores ameaças ao meio ambiente, e seus impactos na flora são profundos e devastadores. A contaminação do ar, da água e do solo afeta diretamente o crescimento e a sobrevivência das plantas, essenciais para a manutenção da vida no planeta. Gases tóxicos liberados pela indústria, queimadas e emissões de veículos prejudicam a fotossíntese, comprometendo a saúde das plantas e reduzindo a produção de oxigênio. Além disso, a poluição da água e do solo pode alterar a composição dos nutrientes, tornando-os inadequados para o desenvolvimento das espécies vegetais.</p>
+          <p>Esse desequilíbrio afeta toda a cadeia alimentar, pois as plantas são a base de muitos ecossistemas, sustentando uma infinidade de organismos. O desaparecimento de vegetação nativa, muitas vezes substituída por espécies invasoras adaptadas à poluição, altera drasticamente a biodiversidade, comprometendo a estabilidade dos ecossistemas e, por consequência, a qualidade de vida de todos os seres vivos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <h2>Poluição marítima</h2>
+      <div class="image-text-flex">
+        <img src="../imagens/passaros-fauna-flora.png" alt="Poluição marítima" />
+        <div>
+          <p>A poluição do mar, causada principalmente pelo descarte inadequado de resíduos industriais, plásticos e esgoto, afeta gravemente a vida marinha. Espécies morrem intoxicadas, habitats são destruídos e a cadeia alimentar é comprometida. Além disso, o ser humano também sofre com a contaminação de peixes e frutos do mar consumidos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <h2>Animais silvestres</h2>
+      <div class="image-text-flex">
+        <img src="../imagens/macaco-fauna-flora.png" alt="Animais silvestres" />
+        <div>
+          <p>A presença de animais silvestres como macacos, capivaras, lontras e outros em áreas contaminadas por lixo industrial é um sinal alarmante do desequilíbrio ecológico causado pela ação humana. Esses animais, expulsos de seus habitats naturais pela destruição ambiental, acabam invadindo locais poluídos em busca de alimento, abrigo ou água.</p>
+          <p>O contato direto com resíduos químicos e industriais pode causar intoxicações, doenças graves e até a morte desses animais. Além disso, essa convivência forçada com ambientes degradados afeta toda a cadeia alimentar, comprometendo a biodiversidade e revelando o impacto profundo do descarte incorreto de materiais químicos no meio ambiente. Preservar a fauna silvestre passa, necessariamente, por uma gestão responsável dos resíduos industriais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="scroll-section">
+      <h2>Colapso da cadeia alimentar</h2>
+      <div class="image-text-flex">
+        <img src="../imagens/cadeia-alimentar-fauna-flora.png" alt="Colapso da cadeia alimentar" />
+        <div>
+          <p>O colapso da cadeia alimentar é uma das consequências mais graves do desequilíbrio ambiental, frequentemente causado pelo descarte incorreto de resíduos e pelo desmatamento. Em regiões afetadas pela poluição química e destruição de habitats naturais, observa-se um aumento significativo no número de animais visivelmente enfraquecidos, desnutridos e doentes. Esse cenário resulta diretamente da contaminação do solo, da água e da vegetação, que afeta os organismos que ocupam a base da cadeia alimentar, como insetos, plantas aquáticas e pequenos peixes.</p>
+          <p>Quando esses organismos essenciais desaparecem ou se tornam tóxicos devido à poluição, as espécies que dependem deles como fonte de alimento enfrentam sérias dificuldades. O impacto negativo se propaga ao longo de toda a cadeia trófica, afetando desde os herbívoros até os predadores no topo da pirâmide alimentar. A escassez de alimentos ou a presença de substâncias tóxicas nos organismos que servem de sustento para outras espécies desencadeia um desequilíbrio populacional. Esse efeito em cascata pode levar à extinção local de diversas espécies, com sérios impactos no ecossistema.</p>
+          <p>O desequilíbrio gerado por essa destruição não afeta apenas a biodiversidade, mas também compromete a resiliência dos ecossistemas e sua capacidade de sustentar a vida de maneira saudável. As alterações na cadeia alimentar podem reduzir a diversidade biológica, afetar a polinização, a decomposição de matéria orgânica e, em última análise, prejudicar a capacidade dos ecossistemas de fornecer serviços vitais, como a purificação da água e do ar, a regulação climática e a proteção contra desastres naturais.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Projeto APS - Ciência da Computação</p>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
+</create_file>
