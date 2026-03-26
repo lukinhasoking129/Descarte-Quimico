@@ -7,7 +7,7 @@ Site informativo desenvolvido com HTML e CSS com foco na conscientização sobre
 
 (adicione aqui um print do seu site depois — posso te ajudar a gerar um bem bonito se quiser)
 
-![Preview do Projeto](./imagens/preview.png)
+![Preview do Projeto](https://github.com/lukinhasoking129/Descarte-Quimico/blob/main/Projeto/imagens/preview.png)
 
 # 📌 Sobre o Projeto
 
