@@ -1,0 +1,905 @@
+/* Reset de margens e paddings para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define altura total e fonte padrão para html e body */
+html, body {
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilos gerais do body */
+body {
+    line-height: 1.6; /* Espaçamento entre linhas */
+    background-color: #f9f9f9; /* Cor de fundo clara */
+    color: #333; /* Cor do texto */
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Direção dos elementos em coluna */
+    padding-top: 70px; /* Espaço para o header fixo */
+    overflow-x: hidden; /* Evita scroll horizontal */
+}
+
+/* Estilo do cabeçalho fixo */
+header {
+    background-color: #00695c; /* Cor de fundo verde escuro */
+    color: white; /* Cor do texto */
+    position: fixed; /* Fixa no topo da página */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa toda a largura */
+    z-index: 1000; /* Fica acima de outros elementos */
+    padding: 8px 0; /* Espaçamento vertical */
+}
+
+/* Barra de navegação principal */
+.navbar {
+    display: flex; /* Layout flexível */
+    justify-content: space-between; /* Espaço entre itens */
+    align-items: center; /* Alinha verticalmente ao centro */
+    max-width: 1200px; /* Largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 15px 30px; /* Espaçamento interno */
+}
+
+/* Estilos do menu hamburger */
+.hamburger {
+    display: flex; /* Layout flexível */
+    flex-direction: column; /* Itens em coluna */
+    cursor: pointer; /* Cursor de clique */
+    width: 30px; /* Largura do ícone */
+    height: 25px; /* Altura do ícone */
+    justify-content: space-between; /* Espaço entre barras */
+    position: relative; /* Posição relativa para animação */
+    z-index: 1100; /* Fica acima do nav */
+}
+
+/* Esconde os links de navegação por padrão */
+.navbar nav {
+    display: none; /* Oculto inicialmente */
+    position: absolute; /* Posicionado em relação ao pai */
+    top: 40px; /* Abaixo do header */
+    right: 0; /* Alinhado à direita */
+    background-color: #00695c; /* Fundo verde escuro */
+    width: 200px; /* Largura do menu dropdown */
+    flex-direction: column; /* Itens em coluna */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3); /* Sombra */
+    z-index: 1001; /* Fica acima de outros elementos */
+    margin-left: 0;
+    padding-left: 0;
+    left: auto;
+}
+
+/* Mostra os links quando o menu hamburger está ativo */
+.navbar nav.active {
+    display: flex; /* Exibe o menu */
+}
+
+/* Estilo dos links no menu dropdown */
+.navbar nav a {
+    padding: 15px 0; /* Espaçamento vertical */
+    border-bottom: 1px solid #004d40; /* Linha inferior */
+    color: white; /* Cor do texto */
+    font-weight: normal; /* Peso da fonte */
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transições suaves */
+    margin-left: 0;
+    text-align: center; /* Centraliza texto */
+    display: block; /* Exibe como bloco */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+/* Efeito hover nos links do menu */
+.navbar nav a:hover {
+    background-color: #004d40; /* Fundo mais escuro */
+    transform: scale(1.05); /* Aumenta levemente */
+    z-index: 10;
+}
+
+/* Estilo do container do nav */
+.navbar nav {
+    overflow: hidden; /* Esconde overflow */
+    border-radius: 8px; /* Bordas arredondadas */
+    width: 200px; /* Largura fixa */
+}
+
+/* Remove a borda inferior do último link */
+.navbar nav a:last-child {
+    border-bottom: none;
+}
+
+/* Garante que os links sejam exibidos como blocos */
+.navbar nav a {
+    display: block;
+}
+
+/* Remove margem padrão do nav */
+nav {
+    margin-top: 0;
+}
+
+/* Define a direção dos links do nav como coluna */
+.navbar nav {
+    flex-direction: column;
+}
+
+/* Define posição relativa para o hamburger */
+.hamburger {
+    position: relative;
+}
+
+/* Remove ocultação do hamburger em telas pequenas */
+@media (max-width: 768px) {
+    .hamburger {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+    }
+}
+
+/* Ajustes para garantir que o hamburger fique no lado direito */
+.navbar {
+   
+    position: relative;
+}
+
+/* Adjust hamburger position on small screens */
+@media (max-width: 768px) {
+    .hamburger {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%);
+    }
+}
+
+.hamburger span {
+    height: 4px;
+    background: white;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Hamburger active animation */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+    main {
+        width: 90%;
+        padding: 20px 30px;
+    }
+    #parte2 {
+        flex-direction: column;
+        padding: 20px;
+    }
+    #parte2 section {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+    .text-overlay h2 {
+        font-size: 1.8rem;
+    }
+    .text-overlay p {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Always show hamburger for testing */
+    .hamburger {
+        display: flex !important;
+    }
+
+    .navbar nav {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #00695c;
+        width: 200px;
+        flex-direction: column;
+        display: none;
+        border-radius: 0 0 0 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+        z-index: 1001;
+        max-height: 60vh;
+        overflow-y: auto;
+    }
+
+    .navbar nav.active {
+        display: flex;
+    }
+
+    .navbar nav a {
+        padding: 15px 20px;
+        border-bottom: 1px solid #004d40;
+        color: white;
+        font-weight: normal;
+    }
+
+    .navbar nav a:last-child {
+        border-bottom: none;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 95%;
+        padding: 15px 20px;
+    }
+    #parte2 {
+        padding: 10px;
+    }
+    .text-overlay h2 {
+        font-size: 1.5rem;
+    }
+    .text-overlay p {
+        font-size: 0.8rem;
+    }
+    header a {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+    header h1 a {
+        font-size: 24px;
+    }
+}
+  
+header h1 a {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+}
+  
+nav {
+    margin-top: 0px;
+}
+  
+header a {
+    font-size: 20px;
+    display: inline-block;
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.2s ease-in-out;
+}
+  
+header a:hover {
+    transform: scale(1.2);
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+  
+main {
+    flex: 1;
+    padding: 30px;
+    width: 80%;
+    margin: auto;
+    background-color: #007941;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.4);
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Desativa eventos de ponteiro */
+    z-index: 1; /* Coloca atrás da árvore e da submain */
+}
+  
+main section {
+    margin-bottom: 40px;
+    padding: 40px 20px;
+    border-radius: 8px;
+    color: white;
+    border-bottom: 2px solid #004d40;
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    background-color:#005a3c
+}
+
+.submain {
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Desativa eventos de ponteiro */
+    z-index: 1; /* Coloca atrás da árvore e da submain */
+}
+  
+main h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+  
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #004d40;
+    color: white;
+}
+  
+#um {
+    background-color: #009751;
+}
+  
+#dois {
+    background-color: white;
+}
+
+#dois h2 {
+    color: #009751;
+}
+  
+#tres {
+    background-color: #009751;
+}
+
+#zero {
+    position: relative;
+  }
+  
+  .image-container {
+    position: relative;
+    width: 100%;
+    height: 600px; /* Ajuste a altura conforme necessário */
+    overflow: hidden; /* Impede que o conteúdo ultrapasse os limites */
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    padding: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+  
+  .text-overlay h2 {
+    font-size: 2rem;
+  }
+  
+  .text-overlay p {
+    font-size: 1rem;
+  }
+
+  .container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: center;     /* centraliza verticalmente */
+  }
+
+#parte2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* increased space between sections */
+    justify-content: space-around;
+    padding: 40px;
+    width: 100%;
+    height: auto;
+    /* Removed min-height to prevent excessive height */
+    background-color: #004d40; /* darker green background */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+    margin-bottom: 40px;
+    margin-top: 40px;
+    color: #d9f0d9; /* light text color */
+    align-items: stretch; /* make child sections equal height */
+  }
+  
+  #parte2 section {
+    flex: 1 1 350px; /* flexible base width */
+    padding: 40px 30px;
+    border-radius: 12px;
+    color: #000000; /* dark text color */
+    background-color: #e6f2e6; /* light green background same as main sections */
+    margin-bottom: 0; /* remove vertical margin */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* fill parent height */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #parte2 section p {
+    color: black; /* ensure paragraph text is black */
+  }
+  
+  #parte2 section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+  }
+  
+  .teste1, .teste2, .testep {
+    background-color: #e6f2e6;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    color: #004d40;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+/* Table styling for improved appearance */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 40px;
+  background: white;
+  color: #222222;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+th, td {
+  border: none;
+  padding: 18px 25px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+th {
+  background-color: #009751;
+  color: white;
+  font-weight: 700;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+
+tbody tr:hover {
+  background-color: #d9ead3;
+}
+
+/* Removed global paragraph styling to avoid affecting all paragraphs */
+
+/* Specific styling for source paragraph in tabela-de-dados section */
+.tabela-de-dados p.source {
+    margin-top: 10px;
+    font-style: italic;
+    color: #a0a0a0;
+}
+
+/* Hover effect for images */
+.imagens-residuos-conteudo {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.imagens-residuos-conteudo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+}
+
+/* Scroll progress bar */
+#scroll-progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px;
+    background: #009751;
+    width: 0%;
+    z-index: 1100;
+    transition: width 0.25s ease-out;
+}
+
+/* Legislacao page improvements */
+.legislacao-hero {
+  color: white;
+  padding: 50px 30px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 60px;
+  background: linear-gradient(135deg, #007941, #009751);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+  font-family: 'Roboto', sans-serif;
+}
+
+.legislacao-hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+.legislacao-hero p {
+  font-size: 1.4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.8;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.legislacao-section {
+  background-color: #005a3c;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+  padding: 40px 35px;
+  margin-bottom: 50px;
+  color: #d9f0d9;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.7;
+  font-size: 1.15rem;
+  transition: background-color 0.3s ease;
+}
+
+.legislacao-section h2 {
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  border-bottom: 4px solid #009751;
+  padding-bottom: 10px;
+  letter-spacing: 1.2px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.legislacao-section p {
+  margin-bottom: 20px;
+}
+
+.legislacao-section ul {
+  padding-left: 20px;
+  margin-bottom: 20px;
+  list-style-type: disc;
+  color: #cde6c7;
+}
+
+.legislacao-section ul ul {
+  list-style-type: circle;
+  padding-left: 25px;
+}
+
+.legislacao-section ul li {
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+}
+
+.legislacao-section a {
+  color: #a8d5a3;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.legislacao-section a:hover {
+  color: #d1f0c1;
+  text-decoration: underline;
+}
+
+.legislacao-section table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  color: #222222;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 30px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  font-size: 1.1rem;
+}
+
+.legislacao-section th, .legislacao-section td {
+  border: none;
+  padding: 16px 25px;
+  text-align: left;
+}
+
+.legislacao-section th {
+  background-color: #009751;
+  color: white;
+  font-weight: 700;
+}
+
+.legislacao-section tbody tr:hover {
+  background-color: #d9ead3;
+  cursor: default;
+}
+
+@media (max-width: 768px) {
+  .legislacao-hero {
+    padding: 30px 20px;
+  }
+  .legislacao-hero h1 {
+    font-size: 2.5rem;
+  }
+  .legislacao-hero p {
+    font-size: 1.1rem;
+  }
+  .legislacao-section {
+    padding: 25px 20px;
+    font-size: 1rem;
+  }
+  .legislacao-section h2 {
+    font-size: 1.8rem;
+  }
+  .legislacao-section table {
+    font-size: 1rem;
+  }
+}
+
+/* Team section styles */
+.team-section {
+  padding: 40px 20px;
+  background-color: #005a3c;
+  border-radius: 8px;
+  color: white;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.team-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* Solutions section styles */
+.solutions-section {
+  padding: 40px 20px;
+  background-color: #00695c;
+  border-radius: 8px;
+  color: white;
+  max-width: 1000px;
+  margin: 40px auto;
+  box-shadow: 0 0 15px rgba(0, 77, 64, 0.7);
+  text-align: center;
+}
+
+.solutions-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.solutions-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.solution-placeholder {
+  background-color: #004d40;
+  border-radius: 12px;
+  width: 280px;
+  height: 180px;
+  box-shadow: 0 0 10px rgba(0, 77, 64, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #cce5cc;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: default;
+  transition: box-shadow 0.3s ease;
+}
+
+.solution-placeholder:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 128, 1);
+}
+
+.team-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.team-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+}
+
+.photo-placeholder {
+  width: 150px;
+  height: 150px;
+  background-color: #004d40;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.team-member p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #d9f0d9;
+  text-align: center;
+}
+
+/* Animation on hover for team member photo */
+.photo-placeholder:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(0, 77, 64, 0.8);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Professor section styles */
+.professor-section {
+  padding: 60px 40px;
+  background-color: #003322;
+  border-radius: 12px;
+  color: white;
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  box-shadow: 0 0 25px rgba(0, 128, 64, 0.8);
+  text-align: center;
+  transition: box-shadow 0.4s ease;
+}
+
+.professor-section:hover {
+  box-shadow: 0 0 40px rgba(0, 255, 128, 1);
+}
+
+.professor-photo-placeholder {
+  width: 180px;
+  height: 180px;
+  background-color: #002211;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 128, 64, 0.9);
+  margin-bottom: 10px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: pointer;
+}
+
+.professor-photo-placeholder:hover {
+  transform: scale(1.15) rotate(5deg);
+  box-shadow: 0 0 40px rgba(0, 255, 128, 1);
+}
+
+.professor-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.professor-photo-placeholder {
+  width: 180px;
+  height: 180px;
+  background-color: #003322;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+  margin-bottom: 10px;
+}
+
+/* New styles for scroll animations */
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.animate-on-scroll.animated {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* New styles for back to top button */
+#back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #009751;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1100;
+  display: none;
+}
+
+#back-to-top:hover {
+  background-color: #007941;
+  transform: scale(1.1);
+}
+
+/* Additional hover effects for images and cards */
+img:hover, .card_casos_reais:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Subtle animation for hero sections on page load */
+.hero {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.hero.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* New styles for tooltips */
+.tooltip {
+  position: absolute;
+  background-color: #004d40;
+  color: #d9f0d9;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  pointer-events: none;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  z-index: 1200;
+  transform: translateX(-50%);
+  opacity: 0.95;
+}
+
+.image-container img:hover {
+  transform: none !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
