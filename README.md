@@ -72,6 +72,6 @@ Base pronta para evolução com JavaScript
 # 👨‍💻 Autores
 
 Lucas Ramos <br>
-Henrique <br>
-Lucas A. <br>
+Henrique Santos <br>
+Lucas Andrade <br>
 🎓 Estudantes de Ciência da Computação
